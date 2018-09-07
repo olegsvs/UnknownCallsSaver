@@ -64,7 +64,7 @@ public class SaverActivity extends AppCompatActivity {
         myThread.start();
     }
 
-    public void getLastOutgoingCallDuration(final Context context) {
+    public void getIncomingCalls(final Context context) {
 
         final Uri callog = CallLog.Calls.CONTENT_URI;
         Cursor cursor = null;
@@ -200,11 +200,11 @@ public class SaverActivity extends AppCompatActivity {
             if (checkSelfPermission(Manifest.permission.READ_CALL_LOG) == PackageManager.PERMISSION_GRANTED
                     && checkSelfPermission(Manifest.permission.READ_CONTACTS) == PackageManager.PERMISSION_GRANTED
                     && checkSelfPermission(Manifest.permission.WRITE_CONTACTS) == PackageManager.PERMISSION_GRANTED) {
-                getLastOutgoingCallDuration(SaverActivity.this);
+                getIncomingCalls(SaverActivity.this);
             } else {
                 ActivityCompat.requestPermissions(this, permissions, permissions_code);
             }
-        } else getLastOutgoingCallDuration(SaverActivity.this);
+        } else getIncomingCalls(SaverActivity.this);
 
     }
 }
