@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">UnknownCallsSaver</string>
+    <string name="prefix">Префикс</string>
+    <string name="button">Начать импорт</string>
+    <string name="info">Импортирование неизвестных</string>
+    <string name="nothingToImport">Нет новых звонков для импорта</string>
+    <string name="importNum">Импортировано</string>
+    <string name="importFin">Импортирование завершено для</string>
+    <string name="contacts">контактов</string>
+    <string name="received">Принятые</string>
+    <string name="rejected">Отклоненные</string>
+    <string name="missed">Пропущенные</string>
+    <string name="blocked">Заблокированные</string>
+</resources>

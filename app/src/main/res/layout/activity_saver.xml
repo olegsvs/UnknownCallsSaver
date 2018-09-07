@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/contactsProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/prefix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/prefix" />
+
+    <CheckBox
+        android:id="@+id/ch1incoming"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/received"/>
+
+    <CheckBox
+        android:id="@+id/ch2rejected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/rejected"/>
+
+    <CheckBox
+        android:id="@+id/ch3missed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/missed"/>
+
+    <CheckBox
+        android:id="@+id/ch4blocked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/blocked"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnClick"
+        android:text="@string/button" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/info"
+        android:textStyle="bold" />
+</LinearLayout>
